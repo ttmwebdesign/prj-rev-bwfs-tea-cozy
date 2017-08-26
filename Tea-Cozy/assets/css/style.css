@@ -1,0 +1,164 @@
+/* body, header, logo */
+body {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 69px;
+  border-bottom: 1px solid seashell;
+  background-color: black;
+}
+#logo {
+  display: flex;
+  flex-grow: 1;
+}
+#logo img {
+  height: 50px;
+  margin-left: 10px;
+}
+
+header nav {
+  padding-right: 6px;
+}
+nav span {
+  padding: 0 6px;
+}
+
+/* heading and other common elements */
+
+a {
+  color: seashell;
+}
+
+/* main content */
+
+#main {
+  margin-top: 69px;
+}
+
+/* hero image */
+
+#mission {
+  background: url('../images/img-mission-background.jpg') no-repeat;
+  height: 700px;
+  width: 1200px;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+#content {
+  background-color: black;
+  text-align: center;
+  height: 100px;
+}
+#content h2 {
+  margin: 10px 0 0 ; 
+}
+#content h4 {
+  margin: 15px 0 0;
+}
+
+/* Tea of the Month */
+
+#featured {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  margin: 0 auto 50px;
+  padding-top: 70px;
+}
+.heading {
+  text-align: center;
+  margin: 10px 0;
+}
+.heading h2, .heading h4 {
+  margin: 0 0 20px;
+}
+.teaflex {
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.tea img {
+  height: 200px;
+  width: 300px;
+  margin: 0 12px 10px;
+}
+.tea p {
+  margin: 0 0 20px;
+  text-align: center;
+}
+/* Locations */
+
+#locations {
+  background: url('../images/img-locations-background.jpg') no-repeat;
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+.locflex {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.loc {
+  background-color: black;
+  opacity: 1;  
+  /* ^^^^^^^^ I thought this a little odd, since this 
+  is no different from simply leaving opacity out...
+  but, it's in the spec, so... ok. */
+  width: 300px;
+  height: 280px;
+  margin-right: 40px;
+  text-align: center;
+}
+.loc p {
+  padding: 10px 0;
+}
+/* footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
+  margin: 0 auto;
+  padding: 0;
+}
+footer h2 {
+  margin: -20px 0 12px;
+  padding: 0;
+}
+footer h5 {
+  margin: 20px 0 12px;
+}
+#copyright {
+  height: 40px;
+  margin-left: 20px;
+  text-align: left;
+}
+#copyright p {
+  font-size: 16px;
+  font-weight: bold;
+}
